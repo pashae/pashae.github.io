@@ -2292,3 +2292,14 @@ pre .css ~ * .id {
   height: 100%;
   overflow: hidden;
 }
+#article-copyright {
+  border: 1px solid #f0f0f0;
+  font-size: 14px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+.copyright-personal {
+  margin-top: 10px;
+  text-align: center;
+}
