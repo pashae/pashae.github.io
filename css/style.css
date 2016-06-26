@@ -1099,6 +1099,10 @@ a {
   border: 1px solid #dedede;
   padding: 0 10px;
 }
+.article-entry table th {
+  text-align: center;
+  font-weight: bold;
+}
 .article-entry figure table {
   border: none;
   width: auto;

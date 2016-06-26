@@ -110,7 +110,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/web前端/" style="font-size: 20px;">web前端</a>
+						<a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web前端/" style="font-size: 20px;">web前端</a>
 					</div>
 				</section>
 				
@@ -177,6 +177,151 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-HTTP学习笔记(一)" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/27/HTTP学习笔记(一)/" class="article-date">
+  	<time datetime="2016-06-26T16:04:46.000Z" itemprop="datePublished">2016-06-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/27/HTTP学习笔记(一)/">HTTP学习笔记</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="HTTP学习笔记（一）"><a href="#HTTP学习笔记（一）" class="headerlink" title="HTTP学习笔记（一）"></a>HTTP学习笔记（一）</h2><h3 id="1-状态码"><a href="#1-状态码" class="headerlink" title="1.状态码"></a>1.状态码</h3><ol>
+<li>100～199：信息状态码<ol>
+<li>100: Continue 说明收到了请求的初始部分，请客户端继续。</li>
+<li>101: Switching Protocols 说明服务器正在根据库护短的指定，将协议切换成Update首部所列的协议</li>
+</ol>
+</li>
+<li>200～299：成功状态码<ol>
+<li>200: OK 请求没问题，尸体的主题部分包含了所请求的资源</li>
+<li>201: Created 用于创建服务器对象的请求</li>
+<li>202: Accepted 请求已被接受，但服务器还未对其执行任何动作</li>
+</ol>
+</li>
+<li>300～399：重定向状态码<ol>
+<li>300: Multiple Choices 客户端请求一个指向多个资源的URL时会返回这个状态码</li>
+<li>301: Moved Permanently 在请求的URL已被移除时使用。相应的Location首部中因该包含资源现在所处的URL。</li>
+<li>302: Found 客户端应该使用Location首部给出的URL来临时定位资源。将来的请求仍应使用老的URL。  </li>
+<li>304: Not Modified 客户端可以通过所包含的请求首部，使其请求变成有条件的。</li>
+</ol>
+</li>
+<li>400～499：客户端错误状态码<ol>
+<li>400: Bad Request 用于告知客户端它发送了一个错误的请求</li>
+<li>403: Forbidden 用于说明请求被服务器拒绝了</li>
+<li>404: Not Found 用于说明服务器无法找到所请求的URL</li>
+<li>408: Request Timeout 如果客户端完成请求所画的时间太长，服务器可以回送此状态码，并关闭连接</li>
+</ol>
+</li>
+<li>500～599：服务器错误状态码<ol>
+<li>500: Internal Server Error 服务器遇到一个妨碍它为请求提供服务的错误时，使用此状态码</li>
+<li>502: Bad Gateway 作为代理或网关使用的服务器从请求响应链的下一条链路上受到了一条伪响应时，使用此状态码</li>
+<li>503: Service Unavailable 用来说明服务器现在无法为请求提供服务，但将来可以。</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-方法"><a href="#2-方法" class="headerlink" title="2.方法"></a>2.方法</h3><ol>
+<li>GET 通常用于请求服务器发送某一个资源</li>
+<li>HEAD 与GET类似，但服务器在相应中只返回首部<ul>
+<li>在不获取资源的情况下了解资源的情况</li>
+<li>通过查看相应中的状态码，看看某个对象是否存在</li>
+<li>通过查看首部，测试资源是否被修改了</li>
+</ul>
+</li>
+<li>POST 通常用来支持HTML表单</li>
+<li>DELETE 请服务器删除请求URL所制定的资源 （若是客户端发起这个操作，则不一定会被执行）</li>
+</ol>
+<h3 id="3-重定向和负载均衡"><a href="#3-重定向和负载均衡" class="headerlink" title="3.重定向和负载均衡"></a>3.重定向和负载均衡</h3><ol>
+<li>为什么要重定向<ul>
+<li>可靠的执行HTTP事务</li>
+<li>最小化时延</li>
+<li>节约网络带宽</li>
+</ul>
+</li>
+<li>通用方法<br><table style="border-collapse:collapse"><tr style="text-align:center"><th>机制</th><th>工作方式</th><th>重新路由的基础</th><th>局限性</th></tr><tr><td>HTTP重定向</td><td>最初，HTTP请求先到第一台Web服务器，这台服务器会选择一台“最佳”的Web服务器为其提供内容。第一台Web服务器回想客户端发送一条道指定服务器的HTTP重定向。客户端会将请求重新发送到选中的服务器上。</td><td>选择最短路径时可用的选项很多，包括轮转负载均衡和最小化时延等</td><td>可能会很慢——每个事物都包含了附加的重定向步骤。而且，第一台服务器一定要能够处理请求负载</td></tr><tr><td>DNS重定向</td><td>DNS服务器决定在URL的主机名中返回多个IP地址中的哪一个</td><td>选择最短路径时可用的选项很多，包括轮转负载均衡和最小化时延等</td><td>需要配置DNS服务器</td></tr><tr><td>Web Proxy代理自动发现(WPAD)</td><td>Web浏览器想配置服务器查询一个PAC文件的URL。与单独使用PAC不同，不需要将浏览器配置为使用特定的配置服务器</td><td>配置服务器，将URL简历在客户端HTTP请求首部提供的信息之上。负载均衡</td><td>只有部分浏览器支持WPAD</td></tr></table><br>HTTP重定向的缺点：<ul>
+<li>需要原始服务器进行大量处理来判断要重定向到那个服务器上去。有时，发布重定向所需的处理量几乎与提供页面本身所需的处理量一样。</li>
+<li>增加了用户时延，因为访问页面时要进行两次往返。</li>
+<li>如果重定向服务器出故障，站点就会瘫痪。</li>
+<li>一般情况下，HTTP重定向都会与其他一种或多种重定向技术结合使用。</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-Cookie"><a href="#4-Cookie" class="headerlink" title="4.Cookie"></a>4.Cookie</h3><p>cookie是当前识别用户，实现持久会话的最好方式。</p>
+<ol>
+<li><p>cookie的基本思想就是让浏览器积累一组服务器特有的信息，每次访问服务器时，都将这些信息提供给它。</p>
+<p> HTTP状态管理机制即为客户端cookie存储的规范;浏览器只会向服务器发送服务器产生的那些cookie。</p>
+</li>
+<li><p>cookie的类型</p>
+<ul>
+<li>会话cookie 临时cookie，它记录了用户访问站点时的设置和偏好。用户退出浏览器时，会话cookie就被删除了。</li>
+<li><p>持久cookie 生存时间更长，存储在硬盘上，浏览器退出，计算机重启时他们仍然存在。通常会用持久cookie维护某个用户会周期性访问的站点的配置文件或登录名。</p>
+</li>
+<li><p>会话cookie和持久cookie之间唯一的区别就是他们的过期时间。</p>
+</li>
+<li><p>如果设置了Discard参数，或者没有设置Expires或Max-Age参数来说明扩展的过期时间，这个cookie就是一个会话cookie。</p>
+<p>当用户通过浏览器访问一个站点的时候，这个站点就会为用户种下一个由名值对({name=value})信息组成的任意列表，这个列表就是cookie。通常情况下，它只包含了一个服务器为了进行跟踪而产生的独特的识别码。通过这个识别码，可以查找到服务器为访问者积累的数据库信息。</p>
+</li>
+</ul>
+</li>
+<li><p>cookie的存储<br> 不同的浏览器会以不同的方式来存储cookie:</p>
+ <table style="border-collapse:collapse"><tr><th>浏览器</th><th>存储地址</th></tr><tr><td>网景(Navigator)</td><td>cookies.txt</td></tr><tr><td>微软(Internet)</td><td>高速缓存目录下独立的文本文件中</td></tr></table>
+</li>
+<li><p>cookie、安全性和隐私<br> cookie是可以禁止的，而且可以通过日志分析或其他方式来实现大部分跟踪记录，所以cookie自身并不是很大的安全隐患。</p>
+<p> 第三方站点使用持久cookie来跟踪用户，结合IP地址和Referer首部信息，某些营销公司就可以构建起相当精确的用户档案和浏览器模式信息。</p>
+</li>
+</ol>
+<hr>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><p>[1] <a href="http://www.ituring.com.cn/book/844" target="_blank" rel="external">HTTP权威指南</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTP/">HTTP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+  
+  
+  
+</article>
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-css-trick2" class="article article-type-post" itemscope itemprop="blogPost">
   
