@@ -7,6 +7,11 @@
     </sitemap>
 
     <sitemap>
+        <loc>http://hans-leesun.com/page-sitemap.xml</loc>
+        <lastmod>2016-06-29T14:03:19.006Z</lastmod>
+    </sitemap>
+
+    <sitemap>
         <loc>http://hans-leesun.com/tag-sitemap.xml</loc>
         <lastmod>2016-03-21T08:33:01.999Z</lastmod>
     </sitemap>
