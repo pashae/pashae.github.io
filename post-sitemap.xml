@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://hans-leesun.com/2016/06/14/css-trick1/</loc>
+        <lastmod>2016-07-08T03:46:36.284Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://hans-leesun.com/2016/06/27/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/</loc>
         <lastmod>2016-06-26T16:31:30.458Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,14 +25,6 @@
     <url>
         <loc>http://hans-leesun.com/2016/06/14/css-trick2/</loc>
         <lastmod>2016-06-14T08:40:26.896Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://hans-leesun.com/2016/06/14/css-trick1/</loc>
-        <lastmod>2016-06-14T08:18:11.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
