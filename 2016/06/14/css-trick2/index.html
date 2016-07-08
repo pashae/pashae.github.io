@@ -28,7 +28,7 @@ css代码:12345678910111213.triangle &amp;#123;	width: 200px;	height: 100px;	tex
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-example.PNG">
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-bulge.PNG">
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-drepressed.PNG">
-<meta property="og:updated_time" content="2016-06-14T08:40:26.896Z">
+<meta property="og:updated_time" content="2016-07-08T03:57:06.290Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见的CSS技巧（二）">
 <meta name="twitter:description" content="使用CSS实现三角形1.CSS实现三角形的原理首先我们先来看一段代码：
@@ -240,6 +240,7 @@ css代码:12345678910111213.triangle &amp;#123;	width: 200px;	height: 100px;	tex
 <p>效果如下如所示：</p>
 <p><img src="http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-principle.PNG" alt="CSS实现三角形原理"></p>
 <p>从图中我们可以看到，当一个元素的<code>border-width</code>达到一定宽度时，在每条边的交界处会出现<strong>均分现象</strong>，即这个元素的每个角都被形成这个角的两条边框所平分。产生这个现象的原因为：<strong>矩形框的四个角并不单独属于某条边，而是由形成它的两条边所共有</strong>。正因为有了这几条外边框，才会形成各个角。</p>
+<a id="more"></a>
 <p>我们还可以看一个更极端的例子：</p>
 <p><img src="http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-unusual.PNG" alt="triangle-unusual"><br>这个例子的实现代码如下：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> class=<span class="string">"triangle-unusual"</span>&gt;&lt;/div&gt;</span><br><span class="line"><span class="comment">/*CSS样式*/</span></span><br><span class="line"><span class="selector-class">.triangle-unusual</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">	<span class="attribute">border-style</span>: solid;</span><br><span class="line">	<span class="attribute">border-top-color</span>: <span class="number">#8ef26e</span>;</span><br><span class="line">	<span class="attribute">border-bottom-color</span>: <span class="number">#4a56f2</span>;</span><br><span class="line">	<span class="attribute">border-left-color</span>: <span class="number">#f24ae8</span>;</span><br><span class="line">	<span class="attribute">border-right-color</span>: <span class="number">#e2464a</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
