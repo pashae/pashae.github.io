@@ -178,6 +178,87 @@
 
       <div class="body-wrap">
   
+    <article id="post-css-trick3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/31/css-trick3/" class="article-date">
+  	<time datetime="2016-07-30T16:07:23.000Z" itemprop="datePublished">2016-07-31</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/31/css-trick3/">常见的CSS技巧（三）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一、辨识px-em-rem"><a href="#一、辨识px-em-rem" class="headerlink" title="一、辨识px,em,rem"></a>一、辨识px,em,rem</h3><ol>
+<li><p>px：1px在浏览器中即为1个像素</p>
+</li>
+<li><p>em：相对单位长度<br> 1.相对参照物为父元素的font-size；</p>
+<p> 2.具有继承的特点；</p>
+<p> 3.当所有的元素都没有设置font-size时，浏览器会有一个默认的em设置：1em = 16px。（这里的16px为chrome浏览器默认的字体大小）</p>
+</li>
+<li><p>rem：相对单位长度<br> 1.相对参照物为根元素html</p>
+<p> 2.参照物相对固定，如果html没有设置font-size，则浏览器会有一个默认的rem设置：1rem = 16px。</p>
+</li>
+<li><p>在chrome浏览器下，一般设置html元素的font-size为62.5%，即10px。在之后的样式代码书写中，如果需要用到em或者rem这样的相对单位长度设置，这样的安排会使后续的代码显得更为简单。</p>
+</li>
+<li><p>这里有一个小知识点需要注意一下，<strong>中文版</strong>的chrome浏览器有一个<font color='red'><strong>最小字号限制</strong></font>，即在<strong>中文版</strong>的chrome浏览器下，默认显示的最小字号为<font color='red'><strong>12px</strong></font>；而在<strong>英文版</strong>的chrome下，这个限制为<font color='red'><strong>10px</strong></font></p>
+</li>
+</ol>
+<h3 id="二、diplay-none与visibility-hidden之间的区别"><a href="#二、diplay-none与visibility-hidden之间的区别" class="headerlink" title="二、diplay:none与visibility:hidden之间的区别"></a>二、diplay:none与visibility:hidden之间的区别</h3><p>&emsp;&emsp;通常情况下，我们有两种隐藏元素的方式，一种为<code>display:none</code>,另一种为<code>visibility:hidden</code>。虽然这两种方法的效果相同，但二者本质上还是有一定的区别的。以下面的代码为例（测试环境为chrome浏览器，51版）：</p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/07/31/css-trick3/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+  
+  
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-HTTP学习笔记(一)" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -475,73 +556,10 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2016/03/21/hello-world/" class="article-date">
-  	<time datetime="2016-03-21T07:33:55.737Z" itemprop="datePublished">2016-03-21</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/21/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-  
-  
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       <footer id="footer">
