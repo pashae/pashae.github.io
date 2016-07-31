@@ -110,7 +110,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web前端/" style="font-size: 20px;">web前端</a>
+						<a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web前端/" style="font-size: 20px;">web前端</a> <a href="/tags/性能优化/" style="font-size: 10px;">性能优化</a>
 					</div>
 				</section>
 				
@@ -177,6 +177,81 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-web-performance-optimization" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/31/web-performance-optimization/" class="article-date">
+  	<time datetime="2016-07-31T12:24:56.000Z" itemprop="datePublished">2016-07-31</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/31/web-performance-optimization/">前端性能优化知识总结（一）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-DNS寻址以及IP地址解析"><a href="#一-DNS寻址以及IP地址解析" class="headerlink" title="一. DNS寻址以及IP地址解析"></a>一. DNS寻址以及IP地址解析</h3><p>1.URI：资源标识符，URL和URN是其子集。URL(统一资源定位符)通过描述资源的位置来表示资源；URN通过描述资源的名字来表示资源。</p>
+<p>&emsp;URL由三部分组成，以 <a cursor="normal">http://www.hans-leesun.com/xx/xx/index.html</a> 为例:</p>
+<p>&emsp;&emsp;1. URL方案(http)：告知web客户端怎样访问资源<br>&emsp;&emsp;2. (www.hans-leesun.com)：指的是服务器的位置<br>&emsp;&emsp;3. (/xx/xx/index.html)：资源路径</p>
+<p>&emsp;即“<strong>方案://服务器位置/路径</strong>”。</p>
+<p>2.下面我们以www.baidu.com为例：</p>
+<p>&emsp;&emsp;当你在浏览器中输入上述这个域名的时候，我们先解析(www.baidu.com.):域名是从右向左解析的.先解析的是.，.代表公网，之后解析到了.com 然后是子域名baidu,最后是www。</p>
+<p>&emsp;&emsp;很多人都想知道，当在浏览器中输入一个url到浏览器为我们呈现出页面的这个过程中究竟发生了什么，以下是我个人对此的理解：</p>
+<p>&emsp;&emsp;当你在浏览器中输入一个url的时候，这个url会在你的浏览器里种下一个cookie。每当你在该页面登录的时候，该页面会发送的请求会带着这个cookie一起到服务器，服务器会根据这些信息帮你返回你个性化定制的界面。如果你是第一次打开这个网页，则浏览器会发送请求到存储该url的DNS的服务器，服务器会返回一个响应，浏览器则根据这个响应确定接下来应该如何渲染页面或者进行其他的操作。</p>
+<p>&emsp;&emsp;如果看官们觉得不够清楚明晰，可以移步<a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" title="Answer">这里</a>或者<a href="http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/&quot;Stackoverflow Answer&quot;">这里</a>。</p>
+<h3 id="二-前端页面渲染流程"><a href="#二-前端页面渲染流程" class="headerlink" title="二. 前端页面渲染流程"></a>二. 前端页面渲染流程</h3><p>1.HTML页面请求：<br>&emsp;1. HTML文档下载<br>&emsp;2. HTML文档解析：<br>&emsp;&emsp;1. DOM树生成：elements窗口展现的（所有的元素）<br>&emsp;&emsp;2. Render树生成：（页面中见到的）<br>&emsp;&emsp;3. 逐级解析DOM树：尽量减少页面的reflow<br>&emsp;&emsp;&emsp;1. 回流：<br>&emsp;&emsp;&emsp;2. 重绘：<br>&emsp;&emsp;&emsp;3. document.write会阻塞通道，不建议使用。（通道是指每个浏览器本身的能力）<br>&emsp;&emsp;&emsp;4. 图片加载可以显示用分辨率较低的图片<br>2.浏览器的JS引擎：<br>&emsp;1. V8（C++）是谷歌发布的开源JS引擎<br>&emsp;2. SpiderMonkey是Mozilla项目的一部分<br>&emsp;3. rhino(Java)使用纯Java写成的JS开源代码实现。它最常用于嵌入Java应用程序，一边为终端用户提供脚本的能力。</p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/性能优化/">性能优化</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/07/31/web-performance-optimization/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+  
+  
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-css-trick3" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -471,69 +546,6 @@
         <p class="article-more-link">
           <a  href="/2016/06/14/css-trick1/#more">more >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-  
-  
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Test" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/21/Test/" class="article-date">
-  	<time datetime="2016-03-21T08:32:38.000Z" itemprop="datePublished">2016-03-21</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/21/Test/">Test</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第一次上传文章的测试！</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li></ul>
-	</div>
-
-      
-
       
       <div class="clearfix"></div>
     </div>
