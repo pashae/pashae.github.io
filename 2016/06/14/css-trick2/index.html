@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>常见的CSS技巧（二） | Leesunpashae</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="¶使用CSS实现三角形
-¶1.CSS实现三角形的原理
+  <meta name="description" content="使用CSS实现三角形
+1.CSS实现三角形的原理
 首先我们先来看一段代码：
 html代码:
 1&amp;lt;div class=&quot;triangle&quot;&amp;gt;CSS实现三角形原理&amp;lt;/div&amp;gt;
@@ -18,8 +18,8 @@ css代码:
 <meta property="og:title" content="常见的CSS技巧（二）">
 <meta property="og:url" content="http://hans-leesun.com/2016/06/14/css-trick2/index.html">
 <meta property="og:site_name" content="Leesunpashae">
-<meta property="og:description" content="¶使用CSS实现三角形
-¶1.CSS实现三角形的原理
+<meta property="og:description" content="使用CSS实现三角形
+1.CSS实现三角形的原理
 首先我们先来看一段代码：
 html代码:
 1&amp;lt;div class=&quot;triangle&quot;&amp;gt;CSS实现三角形原理&amp;lt;/div&amp;gt;
@@ -28,8 +28,8 @@ css代码:
 <meta property="og:updated_time" content="2016-07-31T11:41:21.022Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见的CSS技巧（二）">
-<meta name="twitter:description" content="¶使用CSS实现三角形
-¶1.CSS实现三角形的原理
+<meta name="twitter:description" content="使用CSS实现三角形
+1.CSS实现三角形的原理
 首先我们先来看一段代码：
 html代码:
 1&amp;lt;div class=&quot;triangle&quot;&amp;gt;CSS实现三角形原理&amp;lt;/div&amp;gt;
@@ -205,8 +205,6 @@ css代码:
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -232,8 +230,8 @@ css代码:
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="使用css实现三角形"><a class="header-anchor" href="#使用css实现三角形">¶</a>使用CSS实现三角形</h3>
-<h4 id="1-css实现三角形的原理"><a class="header-anchor" href="#1-css实现三角形的原理">¶</a>1.CSS实现三角形的原理</h4>
+        <h3>使用CSS实现三角形</h3>
+<h4>1.CSS实现三角形的原理</h4>
 <p>首先我们先来看一段代码：</p>
 <p>html代码:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle"</span>&gt;</span>CSS实现三角形原理<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -252,7 +250,7 @@ css代码:
 这个例子的实现代码如下：
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> class=<span class="string">"triangle-unusual"</span>&gt;&lt;/div&gt;</span><br><span class="line"><span class="comment">/*CSS样式*/</span></span><br><span class="line"><span class="selector-class">.triangle-unusual</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">    <span class="attribute">border-style</span>: solid;</span><br><span class="line">    <span class="attribute">border-top-color</span>: <span class="number">#8ef26e</span>;</span><br><span class="line">    <span class="attribute">border-bottom-color</span>: <span class="number">#4a56f2</span>;</span><br><span class="line">    <span class="attribute">border-left-color</span>: <span class="number">#f24ae8</span>;</span><br><span class="line">    <span class="attribute">border-right-color</span>: <span class="number">#e2464a</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>现在我们已经了解了CSS生成三角形的原理，接下来就看几个实例吧。</p>
-<h4 id="2-第一类三角形"><a class="header-anchor" href="#2-第一类三角形">¶</a>2.第一类三角形</h4>
+<h4>2.第一类三角形</h4>
 <p>html代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle1 .clearfix"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle1-1 fl"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle1-2 fl"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle1-3 fl"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle1-4 fl"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>CSS代码：</p>
@@ -275,7 +273,7 @@ css代码:
 <p>通过F12在Chrome浏览器的控制台中可以看到：<strong>triangle1-1</strong>这个三角形是生成于一个<strong>100x50</strong>的矩形之内的。这里的 <strong>100</strong>是由<code>border-left</code>与<code>border-right</code>的<code>width</code>之和构成。由之前所阐述的原理可知：<strong>triangle1-1</strong> 这个三角形的<strong>左下角</strong>是由<code>border-bottom</code>与<code>border-left</code>形成；<strong>右下角</strong>由<code>border-bottom</code>与<code>border-right</code>形成；顶角由<code>border-bottom</code>、<code>border-left</code>与<code>border-right</code>共同形成。最后在页面中看到的这个三角形，其实只是<code>.triangle1-1</code>这个<code>div</code>元素的<code>border-bottom</code>在页面中的显示。</p>
 <p>如果想要改变三角形的形状，可以通过修改样式中各个<code>border</code>的<code>width</code>来实现。</p>
 <p>了解了<code>triangle1-1</code>三角形的实现原理，其余三个三角形的实现原理也很简单，大家可以动手尝试一番。</p>
-<h4 id="3-第二类三角形"><a class="header-anchor" href="#3-第二类三角形">¶</a>3.第二类三角形</h4>
+<h4>3.第二类三角形</h4>
 <p>html代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle2 .clearfix"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle2-1 fl"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle2-2 fl"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle2-3 fl"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle2-4 fl"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>CSS代码：</p>
@@ -297,7 +295,7 @@ css代码:
 <p>通过F12在Chrome浏览器的控制台中可以看到：<strong>triangle2-1</strong>这个三角形是生成于一个<strong>50x50</strong>的矩形之内的。这个三角形的直角是由于<code>border-left</code>被缺失的<code>border-bottom</code>截去了一半所生成的；而三角形的两个锐角则是由<code>border-left</code>与<code>border-top</code>所生成的。（这里大家可能理解起来比较困难，之后我会补充一个综合图例给大家看，相信大家看完之后再回过头来看这个就会好懂许多）。 <strong>triangle2-1</strong>这个三角形的另一种实现方式（代码中注释部分）原理为：<code>border-bottom</code>与被缺失的<code>border-left</code>截取生成直角；而两个锐角则是由<code>border-bottom</code>与<code>border-right</code>生成。</p>
 <p>剩余的三个等腰直角三角形的实现原理与<code>triangle2-1</code>是类似的，且每一种三角形都有两种实现方法。</p>
 <p>修改三角形的形状依旧是通过修改样式中<code>border</code>的<code>width</code>来实现。</p>
-<h4 id="4-组合实例"><a class="header-anchor" href="#4-组合实例">¶</a>4.组合实例</h4>
+<h4>4.组合实例</h4>
 <p>最后，通过一个组合实例，来辅助大家理解等腰直角三角形的实现。</p>
 <p>html代码:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"triangle-example"</span>&gt;</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle-example-item triangle-en en1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"triangle-example-item triangle-en en2"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"triangle-example-item triangle-ws ws1"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"triangle-example-item triangle-ws ws2"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"triangle-example-item triangle-wn wn1"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"triangle-example-item triangle-wn wn2"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"triangle-example-item triangle-es es1"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"triangle-example-item triangle-es es2"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
@@ -309,7 +307,7 @@ css代码:
 </div>
 <p>其中，wn(west-north)表示西北，ws(west-south)表示西南，en(east-north)表示东北，es(east-south)表示东南。这里的方位均指的是三角形的直角所朝向的方位。</p>
 <p>掌握了上面这些小技巧，下面我们就看一看两种网页中常见的三角形的应用。</p>
-<h4 id="5-带有三角形的凸起"><a class="header-anchor" href="#5-带有三角形的凸起">¶</a>5.带有三角形的凸起</h4>
+<h4>5.带有三角形的凸起</h4>
 <p>html代码:</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"triangle-bulge"</span>&gt;我有一个小凸起&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <p>css代码:</p>
@@ -318,7 +316,7 @@ css代码:
 <div align="center">
 ![triangle-bulge](http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-bulge.PNG)
 </div>
-<h4 id="6-带有三角形的凹陷"><a class="header-anchor" href="#6-带有三角形的凹陷">¶</a>6.带有三角形的凹陷</h4>
+<h4>6.带有三角形的凹陷</h4>
 <p>html代码:</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"triangle-depressed"</span>&gt;我有一个小凹陷&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <p>css代码:</p>
@@ -446,12 +444,10 @@ css代码:
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
 
 <script>
 	var yiliaConfig = {
-		fancybox: true,
+		fancybox: false,
 		mathjax: true,
 		animate: true,
 		isHome: false,

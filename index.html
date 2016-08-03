@@ -188,8 +188,6 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -204,7 +202,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一-dns寻址以及ip地址解析"><a class="header-anchor" href="#一-dns寻址以及ip地址解析">¶</a>一.DNS寻址以及IP地址解析</h3>
+        <h3>一.DNS寻址以及IP地址解析</h3>
 <p>1.URI：资源标识符，URL和URN是其子集。URL(统一资源定位符)通过描述资源的位置来表示资源；URN通过描述资源的名字来表示资源。</p>
 <p> URL由三部分组成，以 <a cursor="normal">http://www.hans-leesun.com/xx/xx/index.html</a> 为例:</p>
 <p>  1. URL方案(http)：告知web客户端怎样访问资源<br>
@@ -216,7 +214,7 @@
 <p>  很多人都想知道，当在浏览器中输入一个url到浏览器为我们呈现出页面的这个过程中究竟发生了什么，以下是我个人对此的理解：</p>
 <p>  当你在浏览器中输入一个url的时候，这个url会在你的浏览器里种下一个cookie。每当你在该页面登录的时候，该页面会发送的请求会带着这个cookie一起到服务器，服务器会根据这些信息帮你返回你个性化定制的界面。如果你是第一次打开这个网页，则浏览器会发送请求到存储该url的DNS的服务器，服务器会返回一个响应，浏览器则根据这个响应确定接下来应该如何渲染页面或者进行其他的操作。</p>
 <p>  如果看官们觉得不够清楚明晰，可以移步<a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" title="Answer">这里</a>或者[这里](<a href="http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/">http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/</a>“Stackoverflow Answer”)。</p>
-<h3 id="二-前端页面渲染流程"><a class="header-anchor" href="#二-前端页面渲染流程">¶</a>二. 前端页面渲染流程</h3>
+<h3>二. 前端页面渲染流程</h3>
 <p>1.HTML页面请求：<br>
  1. HTML文档下载<br>
  2. HTML文档解析：<br>
@@ -280,8 +278,6 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -296,7 +292,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一-辨识px-em-rem"><a class="header-anchor" href="#一-辨识px-em-rem">¶</a>一、辨识px,em,rem</h3>
+        <h3>一、辨识px,em,rem</h3>
 <ol>
 <li>
 <p>px：1px在浏览器中即为1个像素</p>
@@ -319,7 +315,7 @@
 <p>这里有一个小知识点需要注意一下，<strong>中文版</strong>的chrome浏览器有一个<font color='red'><strong>最小字号限制</strong></font>，即在<strong>中文版</strong>的chrome浏览器下，默认显示的最小字号为<font color='red'><strong>12px</strong></font>；而在<strong>英文版</strong>的chrome下，这个限制为<font color='red'><strong>10px</strong></font></p>
 </li>
 </ol>
-<h3 id="二-diplay-none与visibility-hidden之间的区别"><a class="header-anchor" href="#二-diplay-none与visibility-hidden之间的区别">¶</a>二、diplay:none与visibility:hidden之间的区别</h3>
+<h3>二、diplay:none与visibility:hidden之间的区别</h3>
 <p>  通常情况下，我们有两种隐藏元素的方式，一种为<code>display:none</code>,另一种为<code>visibility:hidden</code>。虽然这两种方法的效果相同，但二者本质上还是有一定的区别的。以下面的代码为例（测试环境为chrome浏览器，51版）：</p>
       
     </div>
@@ -370,8 +366,6 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -386,8 +380,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="http学习笔记-一"><a class="header-anchor" href="#http学习笔记-一">¶</a>HTTP学习笔记（一）##</h2>
-<h3 id="1-状态码"><a class="header-anchor" href="#1-状态码">¶</a>1.状态码</h3>
+        <h2>HTTP学习笔记（一）##</h2>
+<h3>1.状态码</h3>
 <ol>
 <li>100～199：信息状态码</li>
 <li>100: Continue 说明收到了请求的初始部分，请客户端继续。</li>
@@ -451,8 +445,6 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -467,8 +459,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="使用css实现三角形"><a class="header-anchor" href="#使用css实现三角形">¶</a>使用CSS实现三角形</h3>
-<h4 id="1-css实现三角形的原理"><a class="header-anchor" href="#1-css实现三角形的原理">¶</a>1.CSS实现三角形的原理</h4>
+        <h3>使用CSS实现三角形</h3>
+<h4>1.CSS实现三角形的原理</h4>
 <p>首先我们先来看一段代码：</p>
 <p>html代码:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle"</span>&gt;</span>CSS实现三角形原理<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -528,8 +520,6 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -544,7 +534,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="常见的水平垂直居中方法"><a class="header-anchor" href="#常见的水平垂直居中方法">¶</a>常见的水平垂直居中方法</h3>
+        <h3>常见的水平垂直居中方法</h3>
 <ol>
 <li>
 <p>水平居中：<br>
@@ -622,12 +612,10 @@
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
 
 <script>
 	var yiliaConfig = {
-		fancybox: true,
+		fancybox: false,
 		mathjax: true,
 		animate: true,
 		isHome: true,

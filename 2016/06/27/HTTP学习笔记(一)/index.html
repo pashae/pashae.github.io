@@ -7,40 +7,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>HTTP学习笔记 | Leesunpashae</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="¶HTTP学习笔记（一）##
-¶1.状态码
+  <meta name="description" content="HTTP学习笔记（一）##
+1.状态码
 
 100～199：信息状态码
 100: Continue 说明收到了请求的初始部分，请客户端继续。
 101: Switching Protocols 说明服务器正在根据库护短的指定，将协议切换成Update首部所列的协议
 200～299：成功状态码
 200: OK 请求没问题，尸体的主题部分包含了所请求的资源
-201: Created 用于创建服务器对象">
+201: Created 用于创建服务器对象的请">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTTP学习笔记">
 <meta property="og:url" content="http://hans-leesun.com/2016/06/27/HTTP学习笔记(一)/index.html">
 <meta property="og:site_name" content="Leesunpashae">
-<meta property="og:description" content="¶HTTP学习笔记（一）##
-¶1.状态码
+<meta property="og:description" content="HTTP学习笔记（一）##
+1.状态码
 
 100～199：信息状态码
 100: Continue 说明收到了请求的初始部分，请客户端继续。
 101: Switching Protocols 说明服务器正在根据库护短的指定，将协议切换成Update首部所列的协议
 200～299：成功状态码
 200: OK 请求没问题，尸体的主题部分包含了所请求的资源
-201: Created 用于创建服务器对象">
+201: Created 用于创建服务器对象的请">
 <meta property="og:updated_time" content="2016-07-08T03:57:14.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTP学习笔记">
-<meta name="twitter:description" content="¶HTTP学习笔记（一）##
-¶1.状态码
+<meta name="twitter:description" content="HTTP学习笔记（一）##
+1.状态码
 
 100～199：信息状态码
 100: Continue 说明收到了请求的初始部分，请客户端继续。
 101: Switching Protocols 说明服务器正在根据库护短的指定，将协议切换成Update首部所列的协议
 200～299：成功状态码
 200: OK 请求没问题，尸体的主题部分包含了所请求的资源
-201: Created 用于创建服务器对象">
+201: Created 用于创建服务器对象的请">
   
     <link rel="alternative" href="/atom.xml" title="Leesunpashae" type="application/atom+xml">
   
@@ -211,8 +211,6 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -238,8 +236,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="http学习笔记-一"><a class="header-anchor" href="#http学习笔记-一">¶</a>HTTP学习笔记（一）##</h2>
-<h3 id="1-状态码"><a class="header-anchor" href="#1-状态码">¶</a>1.状态码</h3>
+        <h2>HTTP学习笔记（一）##</h2>
+<h3>1.状态码</h3>
 <ol>
 <li>100～199：信息状态码</li>
 <li>100: Continue 说明收到了请求的初始部分，请客户端继续。</li>
@@ -266,7 +264,7 @@
 <li>502: Bad Gateway 作为代理或网关使用的服务器从请求响应链的下一条链路上受到了一条伪响应时，使用此状态码</li>
 <li>503: Service Unavailable 用来说明服务器现在无法为请求提供服务，但将来可以。</li>
 </ol>
-<h3 id="2-方法"><a class="header-anchor" href="#2-方法">¶</a>2.方法</h3>
+<h3>2.方法</h3>
 <ol>
 <li>GET 通常用于请求服务器发送某一个资源</li>
 <li>HEAD 与GET类似，但服务器在相应中只返回首部</li>
@@ -280,7 +278,7 @@
 <li>POST 通常用来支持HTML表单</li>
 <li>DELETE 请服务器删除请求URL所制定的资源 （若是客户端发起这个操作，则不一定会被执行）</li>
 </ol>
-<h3 id="3-重定向和负载均衡"><a class="header-anchor" href="#3-重定向和负载均衡">¶</a>3.重定向和负载均衡</h3>
+<h3>3.重定向和负载均衡</h3>
 <ol>
 <li>为什么要重定向</li>
 </ol>
@@ -298,7 +296,7 @@ HTTP重定向的缺点：
 	- 增加了用户时延，因为访问页面时要进行两次往返。
 	- 如果重定向服务器出故障，站点就会瘫痪。
 	- 一般情况下，HTTP重定向都会与其他一种或多种重定向技术结合使用。
-<h3 id="4-cookie"><a class="header-anchor" href="#4-cookie">¶</a>4.Cookie</h3>
+<h3>4.Cookie</h3>
 <p>cookie是当前识别用户，实现持久会话的最好方式。</p>
 <ol>
 <li>
@@ -337,7 +335,7 @@ cookie是可以禁止的，而且可以通过日志分析或其他方式来实�
 </li>
 </ol>
 <hr>
-<h3 id="references"><a class="header-anchor" href="#references">¶</a>References</h3>
+<h3>References</h3>
 <p>[1] <a href="http://www.ituring.com.cn/book/844" target="_blank" rel="external">HTTP权威指南</a></p>
 
       
@@ -453,12 +451,10 @@ cookie是可以禁止的，而且可以通过日志分析或其他方式来实�
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
 
 <script>
 	var yiliaConfig = {
-		fancybox: true,
+		fancybox: false,
 		mathjax: true,
 		animate: true,
 		isHome: false,

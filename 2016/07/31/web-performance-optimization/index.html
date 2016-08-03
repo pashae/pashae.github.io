@@ -7,28 +7,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>前端性能优化知识总结（一） | Leesunpashae</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="¶一.DNS寻址以及IP地址解析
+  <meta name="description" content="一.DNS寻址以及IP地址解析
 1.URI：资源标识符，URL和URN是其子集。URL(统一资源定位符)通过描述资源的位置来表示资源；URN通过描述资源的名字来表示资源。
  URL由三部分组成，以 http://www.hans-leesun.com/xx/xx/index.html 为例:
   1. URL方案(http)：告知web客户端怎样访问资源
-  2. (www.hans-leesu">
+  2. (www.hans-leesun">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端性能优化知识总结（一）">
 <meta property="og:url" content="http://hans-leesun.com/2016/07/31/web-performance-optimization/index.html">
 <meta property="og:site_name" content="Leesunpashae">
-<meta property="og:description" content="¶一.DNS寻址以及IP地址解析
+<meta property="og:description" content="一.DNS寻址以及IP地址解析
 1.URI：资源标识符，URL和URN是其子集。URL(统一资源定位符)通过描述资源的位置来表示资源；URN通过描述资源的名字来表示资源。
  URL由三部分组成，以 http://www.hans-leesun.com/xx/xx/index.html 为例:
   1. URL方案(http)：告知web客户端怎样访问资源
-  2. (www.hans-leesu">
-<meta property="og:updated_time" content="2016-08-01T03:13:17.279Z">
+  2. (www.hans-leesun">
+<meta property="og:updated_time" content="2016-08-01T12:38:18.274Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端性能优化知识总结（一）">
-<meta name="twitter:description" content="¶一.DNS寻址以及IP地址解析
+<meta name="twitter:description" content="一.DNS寻址以及IP地址解析
 1.URI：资源标识符，URL和URN是其子集。URL(统一资源定位符)通过描述资源的位置来表示资源；URN通过描述资源的名字来表示资源。
  URL由三部分组成，以 http://www.hans-leesun.com/xx/xx/index.html 为例:
   1. URL方案(http)：告知web客户端怎样访问资源
-  2. (www.hans-leesu">
+  2. (www.hans-leesun">
   
     <link rel="alternative" href="/atom.xml" title="Leesunpashae" type="application/atom+xml">
   
@@ -199,8 +199,6 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
     
       <header class="article-header">
         
@@ -226,7 +224,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一-dns寻址以及ip地址解析"><a class="header-anchor" href="#一-dns寻址以及ip地址解析">¶</a>一.DNS寻址以及IP地址解析</h3>
+        <h3>一.DNS寻址以及IP地址解析</h3>
 <p>1.URI：资源标识符，URL和URN是其子集。URL(统一资源定位符)通过描述资源的位置来表示资源；URN通过描述资源的名字来表示资源。</p>
 <p> URL由三部分组成，以 <a cursor="normal">http://www.hans-leesun.com/xx/xx/index.html</a> 为例:</p>
 <p>  1. URL方案(http)：告知web客户端怎样访问资源<br>
@@ -238,7 +236,7 @@
 <p>  很多人都想知道，当在浏览器中输入一个url到浏览器为我们呈现出页面的这个过程中究竟发生了什么，以下是我个人对此的理解：</p>
 <p>  当你在浏览器中输入一个url的时候，这个url会在你的浏览器里种下一个cookie。每当你在该页面登录的时候，该页面会发送的请求会带着这个cookie一起到服务器，服务器会根据这些信息帮你返回你个性化定制的界面。如果你是第一次打开这个网页，则浏览器会发送请求到存储该url的DNS的服务器，服务器会返回一个响应，浏览器则根据这个响应确定接下来应该如何渲染页面或者进行其他的操作。</p>
 <p>  如果看官们觉得不够清楚明晰，可以移步<a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" title="Answer" target="_blank" rel="external">这里</a>或者[这里](<a href="http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/" target="_blank" rel="external">http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/</a>“Stackoverflow Answer”)。</p>
-<h3 id="二-前端页面渲染流程"><a class="header-anchor" href="#二-前端页面渲染流程">¶</a>二. 前端页面渲染流程</h3>
+<h3>二. 前端页面渲染流程</h3>
 <p>1.HTML页面请求：<br>
  1. HTML文档下载<br>
  2. HTML文档解析：<br>
@@ -254,7 +252,7 @@
  2. SpiderMonkey是Mozilla项目的一部分<br>
  3. rhino(Java)使用纯Java写成的JS开源代码实现。它最常用于嵌入Java应用程序，一边为终端用户提供脚本的能力。</p>
 <a id="more"></a>
-<h3 id="三-yahoo军规"><a class="header-anchor" href="#三-yahoo军规">¶</a>三. Yahoo军规</h3>
+<h3>三. Yahoo军规</h3>
 <p>1.尽可能减少HTTP请求。<br>
  HTTP请求：从客户端到服务器端的请求信息，包括消息首行中，对资源的请求方法、资源的标识符以及使用的协议。<br>
 2.使用CDN（内容分发网络）<br>
@@ -281,7 +279,7 @@
 14.使用AjAx缓存<br>
  1. POST：每次都执行、不被缓存<br>
  2. GET：同一地址不重复执行、可以被缓存</p>
-<h3 id="四-加载方式-提升用户体验"><a class="header-anchor" href="#四-加载方式-提升用户体验">¶</a>四. 加载方式（<strong>提升用户体验</strong>）</h3>
+<h3>四. 加载方式（<strong>提升用户体验</strong>）</h3>
 <p>1.同步加载：<br>
  1. 可能很少的TCP连接就能完成页面的加载<br>
  2. 都加载完成才能展示给用户想看的<br>
@@ -292,7 +290,7 @@
 3.按需加载：<br>
  1. 用户不触发我们就不加载<br>
  2. 用户不触发，但是带宽限制或者页面的主要元素都加载完了，我们可以后加载；但是如果用户触发该功能，模块的加载时间就提前</p>
-<h3 id="五-bigpipe"><a class="header-anchor" href="#五-bigpipe">¶</a>五. BigPipe</h3>
+<h3>五. BigPipe</h3>
 <p> 使用页面元素标签作占位符，与后端进行配合添加内容<br>
  同步加载时，返回一些空的占位符，在源代码中可查。依据占位符中的id，发起请求将返回的内容显示到占位符中。</p>
 <p>缺点：</p>
@@ -300,7 +298,7 @@
  2. SEO引擎较难抓取<br>
  3. 模块之间相互通信引用<br>
  4. 模板引擎重复渲染</p>
-<h3 id="六-优化术语"><a class="header-anchor" href="#六-优化术语">¶</a>六. 优化术语</h3>
+<h3>六. 优化术语</h3>
 <p>1.技术类<br>
  1. 首屏时间（加载到第一屏的功能点，所消耗的时间点）<br>
  2. 白屏时间（从进入页面到head解析的时间）<br>
@@ -313,7 +311,7 @@
  3. day日活跃用户数量（Google Analytics）<br>
  4. MAU月活跃用户人数<br>
  5. 跳出率（跳出时间留下来的人/pv）</p>
-<h3 id="七-seo"><a class="header-anchor" href="#七-seo">¶</a>七. SEO</h3>
+<h3>七. SEO</h3>
 <p><strong>Search Engine Optimization：搜索引擎优化</strong><br>
 1.白帽SEO：<br>
   1. 网站标题、关键字、描述<br>
@@ -447,12 +445,10 @@
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
 
 <script>
 	var yiliaConfig = {
-		fancybox: true,
+		fancybox: false,
 		mathjax: true,
 		animate: true,
 		isHome: false,
