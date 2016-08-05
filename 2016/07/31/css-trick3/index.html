@@ -41,9 +41,12 @@ em：相对单位长度
 rem：相对单位长度
 1.相对参照物为根元素html
 2.参照物相对固定，如果ht">
+<meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-ALL.PNG">
+<meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-none.PNG">
+<meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-2visibility.PNG">
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-2visibility-cursor.png">
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-3display.png">
-<meta property="og:updated_time" content="2016-07-31T14:50:56.795Z">
+<meta property="og:updated_time" content="2016-08-05T06:41:25.097Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见的CSS技巧（三）">
 <meta name="twitter:description" content="一、辨识px,em,rem
@@ -61,7 +64,7 @@ em：相对单位长度
 rem：相对单位长度
 1.相对参照物为根元素html
 2.参照物相对固定，如果ht">
-<meta name="twitter:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-2visibility-cursor.png">
+<meta name="twitter:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-ALL.PNG">
   
     <link rel="alternative" href="/atom.xml" title="Leesunpashae" type="application/atom+xml">
   
@@ -288,17 +291,11 @@ rem：相对单位长度
 <p>css代码：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">20px</span> auto;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item1</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">5px</span> auto;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#ffcc00</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#ffcc00</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item2</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">5px</span> auto;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#ffee00</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#ffee00</span>;</span><br><span class="line">    <span class="attribute">visibility</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item3</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">80px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">5px</span> auto;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#ff00cc</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#ff00cc</span>;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
-<div align="center">
-![CSS3-ALL](http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-ALL.PNG)
-</div>
+<img src="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-ALL.PNG" title="CSS3-ALL" style="margin:0 auto;display:block">
 <p>  接下来，我们去掉<code>.item3</code>的<code>display:none</code>样式以及<code>.item2</code>的<code>visibility: hidden</code>样式之后，各元素在页面中的展示为：</p>
-<div align="center">
-![CSS3-none](http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-none.PNG)
-</div>
+<img src="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-none.PNG" title="CSS3-none" style="margin:0 auto;display:block">
 <p>  此时，我们再将<code>.item2</code>的<code>visibility: hidden</code>样式添加至元素中，我们惊奇地发现：<code>.item2</code>元素不见了：</p>
-<div align="center">
-![CSS3-2visibility](http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-2visibility.PNG)
-</div>
+<img src="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-2visibility.PNG" title="CSS3-2visibility" style="margin:0 auto;display:block">
 <p>  紧接着，我们按下F12查看究竟出了什么问题，将鼠标至于<code>.item2</code>元素上，我们可以看到，本应出现在页面中属于<code>.item2</code>元素的内容没有了，但是<code>.item2</code>元素在页面中所占据的位置还保留着：</p>
 <p><img src="http://o8ptzqvlm.bkt.clouddn.com/image/css3/CSS3-2visibility-cursor.png" alt="CSS3-2visibility-cursor"></p>
 <p>  我们带着疑问继续下面的实验。为了方便做对比，我们使<code>.item2</code>元素显示，并设置<code>.item3</code>的<code>display</code>属性为<code>none</code>,“以防万一”，我们这次直接打开开发者工具并选中<code>.item3</code>,效果如下：</p>
@@ -342,7 +339,7 @@ rem：相对单位长度
   
   
     <a href="/2016/06/27/HTTP学习笔记(一)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTTP学习笔记</div>
+      <div class="article-nav-title">HTTP学习笔记（一）</div>
       <strong class="article-nav-caption">></strong>
     </a>
   

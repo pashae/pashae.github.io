@@ -213,7 +213,7 @@
 <p>  当你在浏览器中输入上述这个域名的时候，我们先解析(<a href="http://www.baidu.com">www.baidu.com</a>.):域名是从右向左解析的.先解析的是.，.代表公网，<a href="http://xn--9iq8en6iv8bp74blv9b.com">之后解析到了.com</a> 然后是子域名baidu,最后是www。</p>
 <p>  很多人都想知道，当在浏览器中输入一个url到浏览器为我们呈现出页面的这个过程中究竟发生了什么，以下是我个人对此的理解：</p>
 <p>  当你在浏览器中输入一个url的时候，这个url会在你的浏览器里种下一个cookie。每当你在该页面登录的时候，该页面会发送的请求会带着这个cookie一起到服务器，服务器会根据这些信息帮你返回你个性化定制的界面。如果你是第一次打开这个网页，则浏览器会发送请求到存储该url的DNS的服务器，服务器会返回一个响应，浏览器则根据这个响应确定接下来应该如何渲染页面或者进行其他的操作。</p>
-<p>  如果看官们觉得不够清楚明晰，可以移步<a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" title="Answer">这里</a>或者[这里](<a href="http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/">http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/</a>“Stackoverflow Answer”)。</p>
+<p>  如果看官们觉得不够清楚明晰，可以移步<a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" title="Answer">这里</a>或者<a href="http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/" title="Stackoverflow Answer">这里</a>。</p>
 <h3>二. 前端页面渲染流程</h3>
 <p>1.HTML页面请求：<br>
  1. HTML文档下载<br>
@@ -371,7 +371,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/27/HTTP学习笔记(一)/">HTTP学习笔记</a>
+      <a class="article-title" href="/2016/06/27/HTTP学习笔记(一)/">HTTP学习笔记（一）</a>
     </h1>
   
 
@@ -380,21 +380,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2>HTTP学习笔记（一）##</h2>
-<h3>1.状态码</h3>
+        <h3>1.状态码</h3>
 <ol>
-<li>100～199：信息状态码</li>
+<li>100～199：信息状态码
+<ol>
 <li>100: Continue 说明收到了请求的初始部分，请客户端继续。</li>
 <li>101: Switching Protocols 说明服务器正在根据库护短的指定，将协议切换成Update首部所列的协议</li>
-<li>200～299：成功状态码</li>
+</ol>
+</li>
+<li>200～299：成功状态码
+<ol>
 <li>200: OK 请求没问题，尸体的主题部分包含了所请求的资源</li>
 <li>201: Created 用于创建服务器对象的请求</li>
 <li>202: Accepted 请求已被接受，但服务器还未对其执行任何动作</li>
-<li>300～399：重定向状态码</li>
+</ol>
+</li>
+<li>300～399：重定向状态码
+<ol>
 <li>300: Multiple Choices 客户端请求一个指向多个资源的URL时会返回这个状态码</li>
 <li>301: Moved Permanently 在请求的URL已被移除时使用。相应的Location首部中因该包含资源现在所处的URL。</li>
 <li>302: Found 客户端应该使用Location首部给出的URL来临时定位资源。将来的请求仍应使用老的URL。</li>
 <li>304: Not Modified 客户端可以通过所包含的请求首部，使其请求变成有条件的。</li>
+</ol>
+</li>
 </ol>
       
     </div>
@@ -467,9 +475,7 @@
 <p>css代码:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.triangle</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">10px</span> auto;</span><br><span class="line">    <span class="attribute">border-width</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">border-style</span>: solid;</span><br><span class="line">    <span class="attribute">border-top-color</span>: <span class="number">#8ef26e</span>;</span><br><span class="line">    <span class="attribute">border-bottom-color</span>: <span class="number">#4a56f2</span>;</span><br><span class="line">    <span class="attribute">border-left-color</span>: <span class="number">#f24ae8</span>;</span><br><span class="line">    <span class="attribute">border-right-color</span>: <span class="number">#e2464a</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>效果如下如所示：</p>
-<div align="center">
-![CSS实现三角形原理](http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-principle.PNG)
-</div>
+<img src="http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-principle.PNG" title="CSS实现三角形原理" style="display:block;margin:0 auto">
 <p>从图中我们可以看到，当一个元素的<code>border-width</code>达到一定宽度时，在每条边的交界处会出现<strong>均分现象</strong>，即这个元素的每个角都被形成这个角的两条边框所平分。产生这个现象的原因为：<strong>矩形框的四个角并不单独属于某条边，而是由形成它的两条边所共有</strong>。正因为有了这几条外边框，才会形成各个角。</p>
       
     </div>
