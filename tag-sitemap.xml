@@ -9,36 +9,36 @@
     </url>
 
     <url>
-        <loc>http://hans-leesun.com/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</loc>
-        <lastmod>2016-08-03T04:13:49.844Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://hans-leesun.com/tags/web/</loc>
-        <lastmod>2016-08-03T04:33:33.691Z</lastmod>
+        <lastmod>2016-08-05T06:46:19.080Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://hans-leesun.com/tags/HTTP/</loc>
-        <lastmod>2016-08-03T04:33:33.691Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://hans-leesun.com/tags/web%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2016-08-05T06:41:25.097Z</lastmod>
+        <lastmod>2016-08-05T06:46:19.080Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://hans-leesun.com/tags/CSS/</loc>
-        <lastmod>2016-08-05T06:41:25.097Z</lastmod>
+        <lastmod>2016-08-05T06:46:23.453Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://hans-leesun.com/tags/web%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2016-08-05T06:46:27.466Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://hans-leesun.com/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</loc>
+        <lastmod>2016-08-05T06:46:27.466Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

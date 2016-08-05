@@ -7,32 +7,8 @@
     </url>
 
     <url>
-        <loc>http://hans-leesun.com/2016/07/31/css-trick3/</loc>
-        <lastmod>2016-08-05T06:41:25.097Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://hans-leesun.com/2016/06/14/css-trick2/</loc>
-        <lastmod>2016-08-03T04:40:40.911Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://hans-leesun.com/2016/06/27/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/</loc>
-        <lastmod>2016-08-03T04:33:33.691Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://hans-leesun.com/2016/07/31/web-performance-optimization/</loc>
-        <lastmod>2016-08-03T04:13:49.844Z</lastmod>
+        <lastmod>2016-08-05T06:46:27.466Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -40,7 +16,31 @@
 
     <url>
         <loc>http://hans-leesun.com/2016/06/14/css-trick1/</loc>
-        <lastmod>2016-07-31T11:58:20.725Z</lastmod>
+        <lastmod>2016-08-05T06:46:23.453Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://hans-leesun.com/2016/06/27/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/</loc>
+        <lastmod>2016-08-05T06:46:19.080Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://hans-leesun.com/2016/06/14/css-trick2/</loc>
+        <lastmod>2016-08-05T06:46:15.959Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://hans-leesun.com/2016/07/31/css-trick3/</loc>
+        <lastmod>2016-08-05T06:41:25.097Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
