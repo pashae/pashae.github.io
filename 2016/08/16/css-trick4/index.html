@@ -5,17 +5,38 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Leesunpashae</title>
+  <title>常见的CSS技巧（四） | Leesunpashae</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leesunpashae">
-<meta property="og:url" content="http://hans-leesun.com/index.html">
+  <meta name="description" content="inline-block
+  display属性设置为inline-block的元素，会在每一个元素中间产生一个4px的间距（chrome下为8px），各个浏览器之间产生的这些空白并不相同，具体情况具体讨论。产生这个间距的原因不是浏览器出现了bug，而是浏览器将代码中的空白符渲染出来导致的。
+  接下来我们上代码吧：
+html代码：
+123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;我是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常见的CSS技巧（四）">
+<meta property="og:url" content="http://hans-leesun.com/2016/08/16/css-trick4/index.html">
 <meta property="og:site_name" content="Leesunpashae">
-<meta property="og:description">
+<meta property="og:description" content="inline-block
+  display属性设置为inline-block的元素，会在每一个元素中间产生一个4px的间距（chrome下为8px），各个浏览器之间产生的这些空白并不相同，具体情况具体讨论。产生这个间距的原因不是浏览器出现了bug，而是浏览器将代码中的空白符渲染出来导致的。
+  接下来我们上代码吧：
+html代码：
+123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;我是">
+<meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-initial.PNG">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f602.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f602.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f602.png">
+<meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-8px.PNG">
+<meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-7px.PNG">
+<meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-final.PNG">
+<meta property="og:updated_time" content="2016-08-16T15:37:22.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leesunpashae">
-<meta name="twitter:description">
+<meta name="twitter:title" content="常见的CSS技巧（四）">
+<meta name="twitter:description" content="inline-block
+  display属性设置为inline-block的元素，会在每一个元素中间产生一个4px的间距（chrome下为8px），各个浏览器之间产生的这些空白并不相同，具体情况具体讨论。产生这个间距的原因不是浏览器出现了bug，而是浏览器将代码中的空白符渲染出来导致的。
+  接下来我们上代码吧：
+html代码：
+123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;我是">
+<meta name="twitter:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-initial.PNG">
   
     <link rel="alternative" href="/atom.xml" title="Leesunpashae" type="application/atom+xml">
   
@@ -176,9 +197,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-css-trick4" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-css-trick4" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/08/16/css-trick4/" class="article-date">
@@ -192,12 +211,27 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/16/css-trick4/">常见的CSS技巧（四）</a>
+    <h1 class="article-title" itemprop="name">
+      常见的CSS技巧（四）
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Skill/">Skill</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -230,401 +264,92 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Skill/">Skill</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
+  <div id="article-copyright">
+	<div class="copyright-official">
+		<b>    版权声明</b>:本文由<b><a href="/about" target="_blank" title="Pashae">Pashae</a></b>创作和发表,采用<b>署名(BY)</b>-<b>非商业性使用(NC)</b>-<b>相同方式共享(SA)</b>国际许可协议进行许可,转载请注明作者及出处:
+	</div>
+	<div class="copyright-personal">
+		本文作者为<b><a href="/about" target="_blank" title="Pashae">Pashae</a></b>本文链接为<b><a href="/2016/08/16/css-trick4/" target="_blank" title="常见的CSS技巧（四）">http://hans-leesun.com/2016/08/16/css-trick4/</a></b>.
+	</div>
+</div>
   
+  
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/31/web-performance-optimization/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端性能优化知识总结（一）</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
   
 </article>
 
 
 
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-web-performance-optimization" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/31/web-performance-optimization/" class="article-date">
-  	<time datetime="2016-07-31T12:24:56.000Z" itemprop="datePublished">2016-07-31</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/31/web-performance-optimization/">前端性能优化知识总结（一）</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3>一.DNS寻址以及IP地址解析</h3>
-<p>1.URI：资源标识符，URL和URN是其子集。URL(统一资源定位符)通过描述资源的位置来表示资源；URN通过描述资源的名字来表示资源。</p>
-<p> URL由三部分组成，以 <a cursor="normal">http://www.hans-leesun.com/xx/xx/index.html</a> 为例:</p>
-<p>  1. URL方案(http)：告知web客户端怎样访问资源<br>
-  2. (<a href="http://www.hans-leesun.com">www.hans-leesun.com</a>)：指的是服务器的位置<br>
-  3. (/xx/xx/index.html)：资源路径</p>
-<p> 即“<strong>方案://服务器位置/路径</strong>”。</p>
-<p>2.下面我们以www.baidu.com为例：</p>
-<p>  当你在浏览器中输入上述这个域名的时候，我们先解析(<a href="http://www.baidu.com">www.baidu.com</a>.):域名是从右向左解析的.先解析的是.，.代表公网，<a href="http://xn--9iq8en6iv8bp74blv9b.com">之后解析到了.com</a> 然后是子域名baidu,最后是www。</p>
-<p>  很多人都想知道，当在浏览器中输入一个url到浏览器为我们呈现出页面的这个过程中究竟发生了什么，以下是我个人对此的理解：</p>
-<p>  当你在浏览器中输入一个url的时候，这个url会在你的浏览器里种下一个cookie。每当你在该页面登录的时候，该页面会发送的请求会带着这个cookie一起到服务器，服务器会根据这些信息帮你返回你个性化定制的界面。如果你是第一次打开这个网页，则浏览器会发送请求到存储该url的DNS的服务器，服务器会返回一个响应，浏览器则根据这个响应确定接下来应该如何渲染页面或者进行其他的操作。</p>
-<p>  如果看官们觉得不够清楚明晰，可以移步<a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" title="Answer">这里</a>或者<a href="http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser/" title="Stackoverflow Answer">这里</a>。</p>
-<h3>二. 前端页面渲染流程</h3>
-<p>1.HTML页面请求：<br>
- 1. HTML文档下载<br>
- 2. HTML文档解析：<br>
-  1. DOM树生成：elements窗口展现的（所有的元素）<br>
-  2. Render树生成：（页面中见到的）<br>
-  3. 逐级解析DOM树：尽量减少页面的reflow<br>
-   1. 回流：<br>
-   2. 重绘：<br>
-   3. document.write会阻塞通道，不建议使用。（通道是指每个浏览器本身的能力）<br>
-   4. 图片加载可以显示用分辨率较低的图片<br>
-2.浏览器的JS引擎：<br>
- 1. V8（C++）是谷歌发布的开源JS引擎<br>
- 2. SpiderMonkey是Mozilla项目的一部分<br>
- 3. rhino(Java)使用纯Java写成的JS开源代码实现。它最常用于嵌入Java应用程序，一边为终端用户提供脚本的能力。</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/性能优化/">性能优化</a></li></ul>
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Summary/">Summary</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/07/31/web-performance-optimization/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-  
-  
-  
-</article>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>     
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="css-trick4" data-title="常见的CSS技巧（四）" data-url="http://hans-leesun.com/2016/08/16/css-trick4/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
-
-
-  
-    <article id="post-css-trick3" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/07/31/css-trick3/" class="article-date">
-  	<time datetime="2016-07-30T16:07:23.000Z" itemprop="datePublished">2016-07-31</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/31/css-trick3/">常见的CSS技巧（三）</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3>一、辨识px,em,rem</h3>
-<ol>
-<li>
-<p>px：1px在浏览器中即为1个像素</p>
-</li>
-<li>
-<p>em：相对单位长度<br>
-1.相对参照物为父元素的font-size；</p>
-<p>2.具有继承的特点；</p>
-<p>3.当所有的元素都没有设置font-size时，浏览器会有一个默认的em设置：1em = 16px。（这里的16px为chrome浏览器默认的字体大小）</p>
-</li>
-<li>
-<p>rem：相对单位长度<br>
-1.相对参照物为根元素html</p>
-<p>2.参照物相对固定，如果html没有设置font-size，则浏览器会有一个默认的rem设置：1rem = 16px。</p>
-</li>
-<li>
-<p>在chrome浏览器下，一般设置html元素的font-size为62.5%，即10px。在之后的样式代码书写中，如果需要用到em或者rem这样的相对单位长度设置，这样的安排会使后续的代码显得更为简单。</p>
-</li>
-<li>
-<p>这里有一个小知识点需要注意一下，<strong>中文版</strong>的chrome浏览器有一个<font color='red'><strong>最小字号限制</strong></font>，即在<strong>中文版</strong>的chrome浏览器下，默认显示的最小字号为<font color='red'><strong>12px</strong></font>；而在<strong>英文版</strong>的chrome下，这个限制为<font color='red'><strong>10px</strong></font></p>
-</li>
-</ol>
-<h3>二、diplay:none与visibility:hidden之间的区别</h3>
-<p>  通常情况下，我们有两种隐藏元素的方式，一种为<code>display:none</code>,另一种为<code>visibility:hidden</code>。虽然这两种方法的效果相同，但二者本质上还是有一定的区别的。以下面的代码为例（测试环境为chrome浏览器，51版）：</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Skill/">Skill</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/07/31/css-trick3/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-  
-  
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-HTTP学习笔记(一)" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/27/HTTP学习笔记(一)/" class="article-date">
-  	<time datetime="2016-06-26T16:04:46.000Z" itemprop="datePublished">2016-06-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/27/HTTP学习笔记(一)/">HTTP学习笔记（一）</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3>1.状态码</h3>
-<ol>
-<li>100～199：信息状态码
-<ol>
-<li>100: Continue 说明收到了请求的初始部分，请客户端继续。</li>
-<li>101: Switching Protocols 说明服务器正在根据库护短的指定，将协议切换成Update首部所列的协议</li>
-</ol>
-</li>
-<li>200～299：成功状态码
-<ol>
-<li>200: OK 请求没问题，尸体的主题部分包含了所请求的资源</li>
-<li>201: Created 用于创建服务器对象的请求</li>
-<li>202: Accepted 请求已被接受，但服务器还未对其执行任何动作</li>
-</ol>
-</li>
-<li>300～399：重定向状态码
-<ol>
-<li>300: Multiple Choices 客户端请求一个指向多个资源的URL时会返回这个状态码</li>
-<li>301: Moved Permanently 在请求的URL已被移除时使用。相应的Location首部中因该包含资源现在所处的URL。</li>
-<li>302: Found 客户端应该使用Location首部给出的URL来临时定位资源。将来的请求仍应使用老的URL。</li>
-<li>304: Not Modified 客户端可以通过所包含的请求首部，使其请求变成有条件的。</li>
-</ol>
-</li>
-</ol>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTP/">HTTP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Notes/">Notes</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/06/27/HTTP学习笔记(一)/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-  
-  
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-css-trick2" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/14/css-trick2/" class="article-date">
-  	<time datetime="2016-06-14T08:21:59.000Z" itemprop="datePublished">2016-06-14</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/14/css-trick2/">常见的CSS技巧（二）</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3>使用CSS实现三角形</h3>
-<h4>1.CSS实现三角形的原理</h4>
-<p>首先我们先来看一段代码：</p>
-<p>html代码:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle"</span>&gt;</span>CSS实现三角形原理<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css代码:</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.triangle</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">10px</span> auto;</span><br><span class="line">    <span class="attribute">border-width</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">border-style</span>: solid;</span><br><span class="line">    <span class="attribute">border-top-color</span>: <span class="number">#8ef26e</span>;</span><br><span class="line">    <span class="attribute">border-bottom-color</span>: <span class="number">#4a56f2</span>;</span><br><span class="line">    <span class="attribute">border-left-color</span>: <span class="number">#f24ae8</span>;</span><br><span class="line">    <span class="attribute">border-right-color</span>: <span class="number">#e2464a</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>效果如下如所示：</p>
-<img src="http://o8ptzqvlm.bkt.clouddn.com/image/css-triangle/triangle-principle.PNG" title="CSS实现三角形原理" style="display:block;margin:0 auto">
-<p>从图中我们可以看到，当一个元素的<code>border-width</code>达到一定宽度时，在每条边的交界处会出现<strong>均分现象</strong>，即这个元素的每个角都被形成这个角的两条边框所平分。产生这个现象的原因为：<strong>矩形框的四个角并不单独属于某条边，而是由形成它的两条边所共有</strong>。正因为有了这几条外边框，才会形成各个角。</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Skill/">Skill</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/06/14/css-trick2/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-  
-  
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -646,8 +371,8 @@
 		fancybox: false,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
