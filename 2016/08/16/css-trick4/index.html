@@ -7,20 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>常见的CSS技巧（四） | Leesunpashae</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="inline-block
+  <meta name="description" content="一、inline-block
   display属性设置为inline-block的元素，会在每一个元素中间产生一个4px的间距（chrome下为8px），各个浏览器之间产生的这些空白并不相同，具体情况具体讨论。产生这个间距的原因不是浏览器出现了bug，而是浏览器将代码中的空白符渲染出来导致的。
   接下来我们上代码吧：
 html代码：
-123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;我是">
+123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常见的CSS技巧（四）">
 <meta property="og:url" content="http://hans-leesun.com/2016/08/16/css-trick4/index.html">
 <meta property="og:site_name" content="Leesunpashae">
-<meta property="og:description" content="inline-block
+<meta property="og:description" content="一、inline-block
   display属性设置为inline-block的元素，会在每一个元素中间产生一个4px的间距（chrome下为8px），各个浏览器之间产生的这些空白并不相同，具体情况具体讨论。产生这个间距的原因不是浏览器出现了bug，而是浏览器将代码中的空白符渲染出来导致的。
   接下来我们上代码吧：
 html代码：
-123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;我是">
+123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;">
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-initial.PNG">
 <meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f602.png">
 <meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f602.png">
@@ -28,14 +28,20 @@ html代码：
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-8px.PNG">
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-7px.PNG">
 <meta property="og:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-final.PNG">
-<meta property="og:updated_time" content="2016-08-16T15:37:22.662Z">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f604.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f604.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f604.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f4aa.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f4aa.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f4aa.png">
+<meta property="og:updated_time" content="2016-08-16T15:55:23.517Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见的CSS技巧（四）">
-<meta name="twitter:description" content="inline-block
+<meta name="twitter:description" content="一、inline-block
   display属性设置为inline-block的元素，会在每一个元素中间产生一个4px的间距（chrome下为8px），各个浏览器之间产生的这些空白并不相同，具体情况具体讨论。产生这个间距的原因不是浏览器出现了bug，而是浏览器将代码中的空白符渲染出来导致的。
   接下来我们上代码吧：
 html代码：
-123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;我是">
+123456&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;">
 <meta name="twitter:image" content="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-initial.PNG">
   
     <link rel="alternative" href="/atom.xml" title="Leesunpashae" type="application/atom+xml">
@@ -236,15 +242,16 @@ html代码：
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3>inline-block</h3>
+        <h3>一、inline-block</h3>
 <p>  display属性设置为inline-block的元素，会在每一个元素中间产生一个4px的间距（chrome下为8px），各个浏览器之间产生的这些空白并不相同，具体情况具体讨论。产生这个间距的原因不是浏览器出现了bug，而是浏览器将代码中的空白符渲染出来导致的。</p>
 <p>  接下来我们上代码吧：</p>
 <p>html代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>我是一号<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>我是二号<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>我是三号<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>我是四号<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>css代码：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">            <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">            <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-tag">ul</span> &#123;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">            <span class="attribute">margin</span>: <span class="number">50px</span> auto;</span><br><span class="line">            <span class="attribute">background-color</span>: <span class="number">#ccc</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-tag">ul</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">            <span class="attribute">display</span>: inline-block;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">70px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">60px</span>;</span><br><span class="line">            <span class="attribute">margin-top</span>: <span class="number">50px</span>;</span><br><span class="line">            <span class="attribute">background-color</span>: <span class="number">#ffcc00</span>;</span><br><span class="line">            <span class="attribute">text-align</span>: center;</span><br><span class="line">            <span class="attribute">line-height</span>: <span class="number">60px</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span> &#123;</span><br><span class="line">            <span class="attribute">margin-left</span>: <span class="number">80px</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-tag">ul</span> <span class="selector-tag">li</span> + <span class="selector-tag">li</span> &#123;</span><br><span class="line">            <span class="attribute">border-left</span>: <span class="number">1px</span> solid <span class="number">#FFF</span>;</span><br><span class="line">            <span class="attribute">margin-left</span>: -<span class="number">8px</span>;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">50px</span> auto;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">70px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">60px</span>;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#ffcc00</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">60px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">80px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span> + <span class="selector-tag">li</span> &#123;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">1px</span> solid <span class="number">#FFF</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: -<span class="number">8px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>  在浏览器中打开我们写好的页面（本例为chrome浏览器中文版，版本号为51）,并打开开发者调试工具。</p>
 <p>  通常情况下，页面为我们展示的效果是下面这样的：</p>
+<a id="more"></a>
 <p><img src="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-initial.PNG" alt="CSS4-initial"></p>
 <p>  从上图中可以看到，在未设置任何margin与padding的情况下，display属性为inline-block的li元素之间出现了间隔。上面我们已经提到，这个间隔是由于浏览器在渲染页面的过程中将各个li元素之间的空白间隔也渲染至页面中所导致的。</p>
 <p>  那如何去除这些间隔呢？通常有以下两种途径：</p>
@@ -256,10 +263,14 @@ html代码：
 <p><img src="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-8px.PNG" alt="CSS4-8px"></p>
 <p>   为了打消大家的疑虑，下面为大家展示一组设置为<code>margin-left: -7px</code>，为了增加对比度，特意把li元素的背景颜色改为白色，结果如下：</p>
 <p><img src="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-7px.PNG" alt="CSS4-7px"></p>
-<p> 从上图中可以清晰的看到，li元素之间依然存在着1px（经实际测量）的间隔。</p>
+<p> 从上图中可以清晰的看到，li元素之间依然存在着<font style="color:red"><strong>1px</strong></font>（经实际测量）的间隔。</p>
 <p>  在平常的开发过程中，我们通常会遇到在各个li元素之间插入一个竖直线条的设计。解决这种设计的方法通常有以图片的方式插入，或者用span标签等来代替。经过我们上面的探讨，在这里提出一种新的方式解决这种设计：为li元素设置样式为<code>ul li + li {margin-left: -8px;border-left:1px solid #fff}</code>，效果如下：</p>
 <p><img src="http://o8ptzqvlm.bkt.clouddn.com/image/css4/CSS4-final.PNG" alt="CSS4-final"></p>
-<p> 可以看到，我们在各个li之间添加了宽度为1px的白色线条。</p>
+<p> 可以看到，我们已经成功地在各个li之间添加了宽度为1px的白色线条。<img class="emoji" draggable="false" alt="😄" src="https://twemoji.maxcdn.com/2/72x72/1f604.png"> <img class="emoji" draggable="false" alt="😄" src="https://twemoji.maxcdn.com/2/72x72/1f604.png"> <img class="emoji" draggable="false" alt="😄" src="https://twemoji.maxcdn.com/2/72x72/1f604.png"></p>
+<hr>
+<blockquote>
+<p>  以上这个小知识点可能大家平时写代码的时候不是特别注意，我也是偶然间发现的，现在贴出来，供大家一起交流学习。<img class="emoji" draggable="false" alt="💪" src="https://twemoji.maxcdn.com/2/72x72/1f4aa.png"> <img class="emoji" draggable="false" alt="💪" src="https://twemoji.maxcdn.com/2/72x72/1f4aa.png"> <img class="emoji" draggable="false" alt="💪" src="https://twemoji.maxcdn.com/2/72x72/1f4aa.png"></p>
+</blockquote>
 
       
     </div>

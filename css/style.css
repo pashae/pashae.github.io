@@ -2303,7 +2303,7 @@ pre .css ~ * .id {
   border: 1px solid #f0f0f0;
   font-size: 14px;
   width: 80%;
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 10px;
 }
 .copyright-personal {
