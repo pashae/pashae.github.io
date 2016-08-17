@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="baidu-site-verification" content="Dl4obI6G7p" />
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>响应式网站设计 | Leesunpashae</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、概念
+ 针对一个理想的视觉体验，同时嵌入各种基于互联网标准的技术使其更有弹性，更能适应不同的媒介的呈现。
+ 响应式网站是一个设计理念，是多种技术的综合体。
+ 响应式设计并不仅限于改变布局。通过媒体查询我们能够相当精确地对页面进行重构：包括在小屏幕上扩大链接的目标区，从而更好的遵循触摸屏的费茨定律；包括对某些元素有选择性地显示或隐藏，从而改善页面的导航功能；还包括设置响应式排字法，渐进地改变字体">
+<meta property="og:type" content="article">
+<meta property="og:title" content="响应式网站设计">
+<meta property="og:url" content="http://hans-leesun.com/2016/08/17/responsiveWeb-design/index.html">
+<meta property="og:site_name" content="Leesunpashae">
+<meta property="og:description" content="一、概念
+ 针对一个理想的视觉体验，同时嵌入各种基于互联网标准的技术使其更有弹性，更能适应不同的媒介的呈现。
+ 响应式网站是一个设计理念，是多种技术的综合体。
+ 响应式设计并不仅限于改变布局。通过媒体查询我们能够相当精确地对页面进行重构：包括在小屏幕上扩大链接的目标区，从而更好的遵循触摸屏的费茨定律；包括对某些元素有选择性地显示或隐藏，从而改善页面的导航功能；还包括设置响应式排字法，渐进地改变字体">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f607.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f603.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f603.png">
+<meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f603.png">
+<meta property="og:updated_time" content="2016-08-17T15:33:44.663Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="响应式网站设计">
+<meta name="twitter:description" content="一、概念
+ 针对一个理想的视觉体验，同时嵌入各种基于互联网标准的技术使其更有弹性，更能适应不同的媒介的呈现。
+ 响应式网站是一个设计理念，是多种技术的综合体。
+ 响应式设计并不仅限于改变布局。通过媒体查询我们能够相当精确地对页面进行重构：包括在小屏幕上扩大链接的目标区，从而更好的遵循触摸屏的费茨定律；包括对某些元素有选择性地显示或隐藏，从而改善页面的导航功能；还包括设置响应式排字法，渐进地改变字体">
+<meta name="twitter:image" content="https://twemoji.maxcdn.com/2/72x72/1f607.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Leesunpashae" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://ww2.sinaimg.cn/mw690/ad537253jw1f2rqwvvyrfj21kw0w67lt.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Pashae</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">今天你努力的程度，决定了未来你生活的样子！</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+						<li>About</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/pashae" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/2907927123/profile?topnav=1&wvr=6&is_all=1" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="#" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/responsive/" style="font-size: 10px;">responsive</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web前端/" style="font-size: 20px;">web前端</a> <a href="/tags/性能优化/" style="font-size: 10px;">性能优化</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">14级北京邮电大学研究生，前端爱好者，希望成为一名优秀的前端工程师！努力做最好的自己，加油！</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Pashae</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://ww2.sinaimg.cn/mw690/ad537253jw1f2rqwvvyrfj21kw0w67lt.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Pashae</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">今天你努力的程度，决定了未来你生活的样子！</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/pashae" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/2907927123/profile?topnav=1&wvr=6&is_all=1" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-responsiveWeb-design" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/17/responsiveWeb-design/" class="article-date">
+  	<time datetime="2016-08-17T15:14:23.000Z" itemprop="datePublished">2016-08-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      响应式网站设计
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/responsive/">responsive</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Summary/">Summary</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3>一、概念</h3>
+<p> 针对一个理想的视觉体验，同时嵌入各种基于互联网标准的技术使其更有弹性，更能适应不同的媒介的呈现。</p>
+<p> 响应式网站是一个设计理念，是多种技术的综合体。</p>
+<p> 响应式设计并不仅限于改变布局。通过媒体查询我们能够相当精确地对页面进行重构：包括在小屏幕上扩大链接的目标区，从而更好的遵循触摸屏的<a href="http://webdesign.tutsplus.com/articles/applying-fitts-law-to-mobile-interface-design--webdesign-6919" title="费茨定律" target="_blank" rel="external">费茨定律</a>；包括对某些元素有选择性地显示或隐藏，从而改善页面的导航功能；还包括设置<a href="https://ia.net/know-how/responsive-typography-the-basics" title="响应式排字法" target="_blank" rel="external">响应式排字法</a>，渐进地改变字体大小和行距，从而为显示设备提供最优化的阅读体验。</p>
+<p> 三大技术成分：</p>
+<p>  1. 弹性网格布局</p>
+<p>  2. 弹性图片</p>
+<p>  3. 媒介查询</p>
+<h3>二、优点与缺点</h3>
+<ol>
+<li>优点<br>
+ 1. 减少工作量<br>
+  1. 网站、设计、代码、内容都只需要一份；<br>
+  2. 多出来的工作量只是JS脚本、CSS样式做一些改动；<br>
+ 2. 减少时间<br>
+ 3. 每个设备都能得到正确的设计<br>
+ 4. 搜索优化</li>
+</ol>
+<a id="more"></a>
+<ol start="2">
+<li>缺点<br>
+ 1. 会加载更多的样式和脚本资源<br>
+ 2. 设计比较难精确定位和控制<br>
+ 3. 老版本浏览器兼容不好</li>
+</ol>
+<h3>三、媒体查询</h3>
+<ol>
+<li>
+<p>媒体查询的语句中，<strong>only</strong>尽量不要省略</p>
+</li>
+<li>
+<p>移动设备：<br>
+ 1.布局视口：用来在一个虚拟的窗口下布局页面的<br>
+ 2.可视视口：网页在移动设备上呈现出来的大小，即屏幕的大小<br>
+ 3.理想视口：布局视口在一个设备上的最佳尺寸。理想视口下的页面便于浏览器、浏览、阅读</p>
+</li>
+</ol>
+<p><strong>缩放可以改变网页在可视视口的大小，但是不能改变网页在布局视口的大小</strong></p>
+<h3>四、设计实践原则</h3>
+<ol>
+<li>渐进增强</li>
+<li>优雅降级（正常人类）</li>
+<li>先对最新版chrome进行调试</li>
+<li>视情况展示网站的内容</li>
+<li>断点的选择，即媒体查询的临界点</li>
+</ol>
+<h3>五、如何组织目录结构</h3>
+<ol>
+<li>约定优于配置</li>
+<li>约定代码结构或命名规范来减少配置数量</li>
+<li>没有最好的组织方式，只有最合适的</li>
+</ol>
+<h3>六、有用的文件</h3>
+<ol>
+<li>robots.txt：约定搜索引擎蜘蛛爬虫不需要爬的页面</li>
+<li>humans.txt：关于开发者的简单介绍</li>
+<li>favicon.ico：网站的图标</li>
+<li>.editorconfig：编辑器样式约定</li>
+<li>.gitignore：版本管理时需要排除的一些“垃圾”文件</li>
+<li><a href="http://README.md" target="_blank" rel="external">README.md</a>：项目简介、使用方式、相关链接</li>
+<li><a href="http://CHANGELOG.md" target="_blank" rel="external">CHANGELOG.md</a>：项目每个版本的更新，说明版本号、更新内容、修复了哪些问题等</li>
+</ol>
+<h3>七、响应式图片</h3>
+<p>加载与用户设备相匹配的小图片，既快速，又不会影响用户的体验</p>
+<ol>
+<li>js或服务端</li>
+<li>srcset:通过高版本浏览器中img标签下的srcset属性来控制什么样的屏幕大小下加载什么样的图片。<br>
+ 1. 方法为<code>srcset=&quot;picture1.png 480w, picture2.png 800w&quot;</code><br>
+ 2. 这个方法中，如果界面从小变到大，则加载的一直是大图片，因为当加载到大图片时，由于浏览器的缓存作用，页面在呈现时会自动调用本地缓存，因此一直会是大图<br>
+ 3. 在DDR为2的情况下，并不是严格按照比值来选择何时加载的，会同时考虑网络状况以及图片比例的其他因素</li>
+<li>srcset配合sizes，sizes的默认值为100vw即百分之百视口宽度。这里还可以添加媒体查询等条件</li>
+<li>picture：</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pircture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">media</span>=<span class="string">"(max-width:36em)"</span> <span class="attr">srcset</span>=<span class="string">"pic1.png"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">"pic2.png"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">"image"</span> <span class="attr">src</span>=<span class="string">"pic2.png"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>为img依据不同的媒体查询条件设置不同的srcset属性,还可以通过source的type属性来选择image/svg + xml或者 image/webp。这个webp格式的图片，只有谷歌和安卓支持</p>
+<ol start="5">
+<li>svg（这种方法还没有尝试过，这里不做讲解，有兴趣的可以自行查阅资料 <img class="emoji" draggable="false" alt="😇" src="https://twemoji.maxcdn.com/2/72x72/1f607.png">）</li>
+</ol>
+<hr>
+<blockquote>
+<p>  以上是我对响应式开发中总结的一些注意事项，可能并不是很全面，还希望感兴趣的同学可以一起交流学习。<img class="emoji" draggable="false" alt="😃" src="https://twemoji.maxcdn.com/2/72x72/1f603.png"> <img class="emoji" draggable="false" alt="😃" src="https://twemoji.maxcdn.com/2/72x72/1f603.png"> <img class="emoji" draggable="false" alt="😃" src="https://twemoji.maxcdn.com/2/72x72/1f603.png"></p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+  <div id="article-copyright">
+	<div class="copyright-official">
+		<b>    版权声明</b>:本文由<b><a href="/about" target="_blank" title="Pashae">Pashae</a></b>创作和发表,采用<b>署名(BY)</b>-<b>非商业性使用(NC)</b>-<b>相同方式共享(SA)</b>国际许可协议进行许可,转载请注明作者及出处:
+	</div>
+	<div class="copyright-personal">
+		本文作者为<b><a href="/about" target="_blank" title="Pashae">Pashae</a></b>本文链接为<b><a href="/2016/08/17/responsiveWeb-design/" target="_blank" title="响应式网站设计">http://hans-leesun.com/2016/08/17/responsiveWeb-design/</a></b>.
+	</div>
+</div>
+  
+  
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/16/css-trick4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">常见的CSS技巧（四）</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+  
+</article>
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>     
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="responsiveWeb-design" data-title="响应式网站设计" data-url="http://hans-leesun.com/2016/08/17/responsiveWeb-design/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Pashae
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script>
+	var yiliaConfig = {
+		fancybox: false,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
