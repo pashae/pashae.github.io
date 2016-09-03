@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: Leesunpashae
+subtitle: 今天你努力的程度，决定了未来你生活的样子！
+description: 
 author: Pashae
 language: zh-CN
 timezone:
@@ -40,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -61,9 +61,38 @@ per_page: 5
 pagination_dir: page
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
+Plugins: 
+- hexo-generator-seo-friendly-sitemap 
 ## Themes: https://hexo.io/themes/
 theme: yilia
+
+
+# Markdown
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji 
+  #anchors:
+    #level: 2
+    #collisionSuffix: 'v'
+    #permalink: true
+    #permalinkClass: header-anchor
+    #permalinkSymbol: ¶
+
+#sitemap
+sitemap:
+	path: sitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

@@ -2,14 +2,14 @@
 menu:
   主页: /
   所有文章: /archives
-  # 随笔: /tags/随笔
+  随笔: /tags/随笔
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
+  github: "https://github.com/pashae"
+  weibo: "http://weibo.com/2907927123/profile?topnav=1&wvr=6&is_all=1"
   rss: "#"
-  zhihu: "#"
+  #zhihu: "#"
   #douban: "#"
   #mail: "#"
   #facebook: "#"
@@ -21,7 +21,7 @@ rss: /atom.xml
 
 # Content
 excerpt_link: more
-fancybox: true
+fancybox: false
 mathjax: true
 
 # 是否开启动画效果
@@ -32,10 +32,10 @@ open_in_new: false
 
 # Miscellaneous
 google_analytics: ''
-favicon: /favicon.png
+favicon: /favicon.ico
 
 #你的头像url
-avatar:
+avatar: http://ww2.sinaimg.cn/mw690/ad537253jw1f2rqwvvyrfj21kw0w67lt.jpg
 #是否开启分享
 share_jia: true
 share_addthis: false
@@ -49,16 +49,15 @@ tagcloud: true
 #不开启——
 #friends: false
 #开启——
-friends:
-  奥巴马的博客: http://localhost:4000/
-  卡卡的美丽传说: http://localhost:4000/
-  本泽马的博客: http://localhost:4000/
-  吉格斯的博客: http://localhost:4000/
-  习大大大不同: http://localhost:4000/
-  托蒂的博客: http://localhost:4000/
+#friends:
+#  奥巴马的博客: http://localhost:4000/
+#  卡卡的美丽传说: http://localhost:4000/
+#  本泽马的博客: http://localhost:4000/
+#  吉格斯的博客: http://localhost:4000/
+#  托蒂的博客: http://localhost:4000/
 
 #是否开启“关于我”。
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+aboutme: 14级北京邮电大学研究生，前端爱好者，希望成为一名优秀的前端工程师！努力做最好的自己，加油！

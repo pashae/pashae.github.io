@@ -46,9 +46,42 @@
     <% } %>
   </div>
   <% if (!index){ %>
+  <%- partial('declare') %>
+  <% } %>
+  
+  <% if (!index){ %>
     <%- partial('post/nav') %>
   <% } %>
+  
 </article>
+
+<% if (!index){ %>
+  <script type="text/javascript">
+    //复制内容时自带版权信息
+    function addLink(){
+    var copyright="原文地址:{url}<br/>内容来源:Leesunpashae";
+    var reg=new RegExp("{title}","g");
+    copyright = copyright.replace(reg,document.title);
+    reg = new RegExp("{url}","g");
+    copyright = copyright.replace(reg,document.location.href);
+    var body_element = document.getElementsByTagName("body")[0];
+    var selection;
+    selection = window.getSelection();
+    var pagelink = "<br />"+copyright;
+    var copy_text = selection+pagelink;
+    var new_div = document.createElement("div");
+    new_div.style.left = "-99999px";
+    new_div.style.position = "absolute";
+    body_element.appendChild(new_div);
+    new_div.innerHTML = copy_text;
+    selection.selectAllChildren(new_div);
+    window.setTimeout(function(){
+      body_element.removeChild(new_div)
+    },100)};
+    document.body.oncopy = addLink;
+
+  </script>
+<% } %>
 
 <% if (!index && theme.share_jia){ %>
 <%- partial('post/share_jia') %>
@@ -56,6 +89,17 @@
 
 <% if (!index && theme.share_addthis){ %>
 <%- partial('post/share_addthis') %>
+<% } %>
+
+<% if (!index){ %>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>     
 <% } %>
 
 <% if (!index && theme.duoshuo && post.comments){ %>
