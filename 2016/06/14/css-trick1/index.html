@@ -68,7 +68,24 @@
 <body>
   <div id="container">
     <div class="left-col">
-    <div class="overlay"></div>
+    <div class="baidu_js_push">
+	<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</div>
+<div class="overlay"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -319,6 +336,32 @@
   
   
 </article>
+
+
+  <script type="text/javascript">
+    function addLink(){
+    var copyright="原文地址:{url}<br/>内容来源:Leesunpashae";
+    var reg=new RegExp("{title}","g");
+    copyright = copyright.replace(reg,document.title);
+    reg = new RegExp("{url}","g");
+    copyright = copyright.replace(reg,document.location.href);
+    var body_element = document.getElementsByTagName("body")[0];
+    var selection;
+    selection = window.getSelection();
+    var pagelink = "<br />"+copyright;
+    var copy_text = selection+pagelink;
+    var new_div = document.createElement("div");
+    new_div.style.left = "-99999px";
+    new_div.style.position = "absolute";
+    body_element.appendChild(new_div);
+    new_div.innerHTML = copy_text;
+    selection.selectAllChildren(new_div);
+    window.setTimeout(function(){
+      body_element.removeChild(new_div)
+    },100)};
+    document.body.oncopy = addLink;
+
+  </script>
 
 
 
